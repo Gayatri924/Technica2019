@@ -4,10 +4,10 @@ var home = require('./home');
 
 module.exports.set = function(app, request) {
 
-    app.get('/', home.someMethod);
+    app.get('/', home.displayHome);
 
-    app.get('/learn', learn.someMethod);
+    app.get('/learn', game.middleWare, learn.displayLearningMaterial);
 
-    app.get('/play', game.someMethod);
+    app.get('/play', game.middleWare,  game.startGame);
 
 }
