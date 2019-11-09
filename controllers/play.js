@@ -2,7 +2,7 @@
 var fs = require('fs');
 
 exports.middleWare = function(req, res, next){
-    var body = fs.readFileSync("resources/questions.txt")
+    var body = fs.readFileSync("resources/questions.txt").toString('utf-8')
     var obj = JSON.parse(body)
     res.locals.obj = obj
     next()

@@ -1,0 +1,18 @@
+<html>
+<header>
+    <form action='' method= "get">
+        <button type = "submit">Go to Homepage!</button>
+    </form>
+    <form action='play' method= "get">
+        <button type = "submit">Play!</button>
+     </form>
+</header>
+    <body>
+        <ul>
+
+            {{#each fact}}
+                <li>{{@key}} {{this}} </li>
+            {{/each}}
+        </ul>
+    </body>
+<html>
