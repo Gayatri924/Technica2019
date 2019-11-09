@@ -17,16 +17,11 @@ app.set('view engine', 'hbs');
 
 //link files
 
-app.use('/css', express.static(path.join(__dirname, 'css')));
-app.use('/js', express.static(path.join(__dirname, 'js')));
-
 // -------------- express 'get' handlers -------------- //
 // These 'getters' are what fetch your pages
 
-app.get('/', function(req, res){
-    res.send('Homepage');
-});
-
+var controllers = require('./controllers');
+controllers.set(app, request);
 
 // -------------- listener -------------- //
 // // The listener is what keeps node 'alive.' 
