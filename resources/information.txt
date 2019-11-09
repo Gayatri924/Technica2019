@@ -1,1 +1,1 @@
-{ "1": {"sampleQuestion": "sampleInfo"},"2":  {"sampleQuestion2": "sampleInfo2"} }
+{ "fact" : {"sampleQuestion": "sampleInfo", "sampleQuestion2": "sampleInfo2"} }
