@@ -1,4 +1,4 @@
-var game = require('./game');
+var game = require('./play');
 var learn = require('./learn');
 var home = require('./home');
 

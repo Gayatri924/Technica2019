@@ -4,7 +4,6 @@ var path = require('path');
 var request = require('request');
 var hbs = require('hbs');
 var fs = require('fs');
-var cookieSession = require('cookie-session');
 
 app.set('port', process.env.PORT || 8080 );
 app.set('view engine', 'hbs');
