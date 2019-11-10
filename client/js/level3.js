@@ -142,7 +142,7 @@ function onServerResponse(responseText) {
 function chooseAnswer(){
     var chosenAnswer = $("#the_form").serialize();
     var ajax_params = {
-        'url'     : "http://3.226.240.138/checkAnswer",
+        'url'     : "http://3.226.240.138/game_over",
         'type'    : "get",
         'data'    : {'ans' : chosenAnswer, 'QuestionNum' : numQ},
         'success' : correctFunction
