@@ -12,7 +12,25 @@ exports.startGame = function(req, res){
     res.render( "level1" , res.locals.obj)
 }
 
+
 exports.background_questions = function(req, res){
   var num = req.query.num;
+  questionAnswerObj = res.locals.obj[num]
+  res.render('questions', {'responseObject': questionAnswerObj})
+}
+
+exports.checkAnswer = function(req, res){
+    var ans = req.query.ans;
+    var numQ = req.query.QuestionNum;
+    console.log(ans)
+    console.log(res.locals.obj)
+    console.log(numQ)
+    answer = "option="+res.locals.obj[numQ].theAnswer
+    console.log(answer)
+    var returnBool = false
+    if (ans == answer){
+        returnBool = true
+    }
+    res.render('result', {'responseObject' : returnBool})
 
 }
