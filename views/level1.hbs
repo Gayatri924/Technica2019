@@ -3,15 +3,19 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type"text/css" href = "css/game.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="js/level1.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/infoAndHome.css">
     </head>
     <body onload="startGame()">
+      <div id="game">
+        <canvas id="canva"></canvas>
+      </div>
     <br>
         <div id="button">
-        < button id="Go">Go</button>
+        <button id="go">Go</button>
             <div id="question">
             </div>
         </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/level1.js"></script>
 </html>

@@ -1,12 +1,15 @@
 var Carmen;
-var interval = setInterval(updateGameArea, 5); // speed
+var speed = 5;
+var interval = setInterval(updateGameArea, speed); // speed
+var carmenMover;
 
 function startGame() {
   myGameArea.start();
-  Carmen = new component(30, 30, "images/main_character_1.png", 10, 250);
-  Person1 = new component(30, 30, "images/random citizen one.png", 600, 10);
-  Person2 = new component(30, 30, "images/random citizen two.png", 1200, 10);
-  Person3 = new component(30, 30, "images/random citizen three.png", 1600, 250);
+  Carmen = new component(20, 20, "images/main_character_1.png", 10, 290);
+  Person1 = new component(20, 20, "images/random citizen one.png", 250, 10);
+  Person2 = new component(20, 20, "images/random citizen two.png", 1000, 10);
+  Person3 = new component(20, 20, "images/random citizen three.png", 1270, 290);
+  Background = new component(1600, 600, "images/level_one_bg.png", 0, 0);
 }
 
 function component(width, height, src, x, y) {
@@ -20,12 +23,11 @@ function component(width, height, src, x, y) {
 }
 
 var myGameArea = {
-  canvas : document.createElement("canvas"),
+  canvas : document.getElementById("canva"),
   start : function() {
-    this.canvas.width = 1800;
+    this.canvas.width = 1600;
     this.canvas.height = 600;
     this.context = this.canvas.getContext("2d");
-    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
   },
   clear : function() {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
@@ -45,30 +47,72 @@ function component(width, height, source, x, y) {
   }
 }
 
+document.getElementById("go").addEventListener("mousedown", startMoving);
+
+function startMoving(){
+  console.log("Move");
+  carmenMover = setInterval(moveCarmen, 1);
+}
+
+function moveCarmen(){
+  Carmen.x += 1;
+  boardUpdate();
+}
+
+document.getElementById("go").addEventListener("mouseup", stopMoving);
+
+function stopMoving(){
+  clearInterval(carmenMover);
+}
+
 var change = 1;
 
-function updateGameArea() {
+function boardUpdate(){
   myGameArea.clear();
-  Carmen.x += 1;
+  Background.update();
+  Person1.update();
+  Person2.update();
+  Carmen.update();
+  Person3.update();
+}
+
+function updateGameArea() {
   if(Person1.y >= 450 || Person1.y < 10){
     change *= -1;
   }
   Person1.y += change;
   Person2.y += change;
-  console.log(Person1.y);
-  Carmen.update();
-  Person1.update();
-  Person2.update();
-  Person3.update();
+  boardUpdate();
   checkCollisions();
 }
+var check3 = false;
+var check2 = false;
+var check1 = false;
 
 function checkCollisions(){
-  if(Math.abs(Carmen.x - Person3.x) < 50){
+  if(Math.abs(Carmen.x - Person3.x) < 50 && !check3){
+    console.log(check3);
     clearInterval(interval);
-    console.log("Hi I'm Here!!!")
+    check3 = true;
+    stopMoving();
+    document.getElementById("go").removeEventListener("mousedown", startMoving);
     fetchFromServer(3);
-
+  }
+  if(Math.abs(Carmen.x - Person2.x) < 50 && Math.abs(Carmen.y - Person2.y) < 100 && !check2){
+    console.log(check3);
+    clearInterval(interval);
+    check2 = true;
+    stopMoving();
+    document.getElementById("go").removeEventListener("mousedown", startMoving);
+    fetchFromServer(2);
+  }
+  if(Math.abs(Carmen.x - Person1.x) < 50 && Math.abs(Carmen.y - Person1.y) < 100 && !check1){
+    console.log(check3);
+    clearInterval(interval);
+    check1 = true;
+    stopMoving();
+    document.getElementById("go").removeEventListener("mousedown", startMoving);
+    fetchFromServer(1);
   }
 }
 var numQ = 0;
@@ -76,7 +120,7 @@ var numQ = 0;
 function fetchFromServer(number) {
     numQ = number
     var ajax_params = {
-        'url'     : "http://localhost:8080/background_questions",
+        'url'     : "http://127.0.0.1:8080/background_questions",
         'type'    : "get",
         'data'    : {'num': number},
         'success' : onServerResponse
@@ -91,7 +135,7 @@ function onServerResponse(responseText) {
 function chooseAnswer(){
     var chosenAnswer = $("#the_form").serialize();
     var ajax_params = {
-        'url'     : "http://localhost:8080/checkAnswer",
+        'url'     : "http://127.0.0.1:8080/checkAnswer",
         'type'    : "get",
         'data'    : {'ans' : chosenAnswer, 'QuestionNum' : numQ},
         'success' : correctFunction
@@ -101,5 +145,15 @@ function chooseAnswer(){
 }
 
 function correctFunction(responseObject) {
-    document.getElementById("question").innerHTML = responseObject
+    document.getElementById("question").innerHTML = responseObject;
+    var state = document.getElementById("validity").innerHTML;
+    console.log(state);
+    if(state == "false"){
+      Carmen.x = 10;
+      check3 = false;
+      check2 = false;
+      check1 = false;
+    }
+    interval = setInterval(updateGameArea, speed);
+    document.getElementById("go").addEventListener("mousedown", startMoving);
 }
