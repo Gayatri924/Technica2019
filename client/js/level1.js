@@ -66,13 +66,17 @@ function updateGameArea() {
 function checkCollisions(){
   if(Math.abs(Carmen.x - Person3.x) < 50){
     clearInterval(interval);
+    console.log("Hi I'm Here!!!")
     fetchFromServer(3);
+
   }
 }
+var numQ = 0;
 
 function fetchFromServer(number) {
+    numQ = number
     var ajax_params = {
-        'url'     : "https://user.tjhsst.edu/2021ggopavaj/background_questions",
+        'url'     : "http://localhost:8080/background_questions",
         'type'    : "get",
         'data'    : {'num': number},
         'success' : onServerResponse
@@ -80,6 +84,22 @@ function fetchFromServer(number) {
 
     $.ajax( ajax_params)
 }
-function onServerResponse (responseText) {
-    document.getElementById('main').innerHTML = responseText;
+function onServerResponse(responseText) {
+    document.getElementById('question').innerHTML = responseText;
+}
+
+function chooseAnswer(){
+    var chosenAnswer = $("#the_form").serialize();
+    var ajax_params = {
+        'url'     : "http://localhost:8080/checkAnswer",
+        'type'    : "get",
+        'data'    : {'ans' : chosenAnswer, 'QuestionNum' : numQ},
+        'success' : correctFunction
+    }
+    console.log(ajax_params)
+    $.ajax( ajax_params )
+}
+
+function correctFunction(responseObject) {
+    document.getElementById("question").innerHTML = responseObject
 }
