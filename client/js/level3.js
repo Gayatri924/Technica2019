@@ -127,7 +127,7 @@ var numQ = 0;
 function fetchFromServer(number) {
     numQ = number
     var ajax_params = {
-        'url'     : "http://127.0.0.1:8080/background_questions",
+        'url'     : "http://3.226.240.138/background_questions",
         'type'    : "get",
         'data'    : {'num': number},
         'success' : onServerResponse
