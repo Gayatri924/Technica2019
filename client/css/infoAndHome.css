@@ -1,0 +1,99 @@
+header {
+  background-color: black;
+  border-bottom: 1px solid #466995;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+ul {
+  margin: 00px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+li {
+  /*color: #FFF;*/
+  color:black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 200px;
+}
+
+button {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.headerbtn button{
+  background-color: black;
+  color:white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 500px;
+  border: 2px solid black;
+
+}
+
+.headerbtn button:hover{
+  color: grey;
+
+}
+
+
+h1 {
+  color: #74ECE0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.headerbtn form {
+  margin: 30px auto;
+  text-align: center;
+}
+.bodybtn form {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.bodybtn button:hover{
+  background-color: pink;
+
+}
+
+.bodybtn button{
+  background-color: white;
+  color:black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 500px;
+  border: 2px solid black;
+
+}
+
+.left {
+    float: left;
+    padding: 0 20 40 0px;
+}
+
+.right {
+    float: right;
+    padding: 0 80 40 0px;
+}
