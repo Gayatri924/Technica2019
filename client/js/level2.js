@@ -7,7 +7,7 @@ function startGame() {
   myGameArea.start();
   Carmen = new component(20, 20, "images/main_character_1.png", 10, 290);
   Person1 = new component(20, 20, "images/random citizen one.png", 500, 10);
-  Person2 = new component(20, 20, "images/random citizen two.png", 1050, 10);
+  Person2 = new component(20, 20, "images/random citizen two.png", 1050, 300);
   Person3 = new component(20, 20, "images/random citizen three.png", 1350, 290);
   Background = new component(1600, 600, "images/LEVEL_2_BG.png", 0, 0);
 }
@@ -66,6 +66,7 @@ function stopMoving(){
 }
 
 var change = 1;
+var change2 = 1;
 
 function boardUpdate(){
   myGameArea.clear();
@@ -80,8 +81,11 @@ function updateGameArea() {
   if(Person1.y >= 450 || Person1.y < 10){
     change *= -1;
   }
+  if(Person2.y >= 450 || Person2.y < 10){
+    change2 *= -1;
+  }
   Person1.y += change;
-  Person2.y += change;
+  Person2.y += change2;
   boardUpdate();
   checkCollisions();
 }

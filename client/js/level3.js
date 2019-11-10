@@ -7,8 +7,8 @@ function startGame() {
   myGameArea.start();
   Carmen = new component(20, 20, "images/main_character_1.png", 10, 290);
   Person1 = new component(20, 20, "images/random citizen one.png", 450, 10);
-  Person2 = new component(20, 20, "images/random citizen two.png", 800, 10);
-  Person3 = new component(20, 20, "images/random citizen three.png", 1200, 10);
+  Person2 = new component(20, 20, "images/random citizen two.png", 800, 200);
+  Person3 = new component(20, 20, "images/random citizen three.png", 1200, 300);
   Background = new component(1600, 600, "images/level_3_bg.png", 0, 0);
 }
 
@@ -65,7 +65,7 @@ function stopMoving(){
   clearInterval(carmenMover);
 }
 
-var change = 1;
+var change = [1, 1, 1];
 
 function boardUpdate(){
   myGameArea.clear();
@@ -78,11 +78,17 @@ function boardUpdate(){
 
 function updateGameArea() {
   if(Person1.y >= 450 || Person1.y < 10){
-    change *= -1;
+    change[0] *= -1;
   }
-  Person1.y += change;
-  Person2.y += change;
-  Person3.y += change;
+  if(Person2.y >= 450 || Person2.y < 10){
+    change[1] *= -1;
+  }
+  if(Person3.y >= 450 || Person3.y < 10){
+    change[2] *= -1;
+  }
+  Person1.y += change[0];
+  Person2.y += change[1];
+  Person3.y += change[2];
   boardUpdate();
   checkCollisions();
 }
@@ -142,7 +148,7 @@ function onServerResponse(responseText) {
 function chooseAnswer(){
     var chosenAnswer = $("#the_form").serialize();
     var ajax_params = {
-        'url'     : "http://3.226.240.138/game_over",
+        'url'     : "http://3.226.240.138/checkAnswer",
         'type'    : "get",
         'data'    : {'ans' : chosenAnswer, 'QuestionNum' : numQ},
         'success' : correctFunction
