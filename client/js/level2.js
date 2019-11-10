@@ -157,7 +157,6 @@ function chooseAnswer(){
 function correctFunction(responseObject) {
     document.getElementById("question").innerHTML = responseObject;
     var state = document.getElementById("validity").innerHTML;
-    console.log(state);
     if(state == "false"){
       Carmen.x = 10;
       check3 = false;
