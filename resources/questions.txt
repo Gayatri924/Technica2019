@@ -20,5 +20,62 @@
     "question": "How many official credit bureaus are there?",
     "answer": ["2","3","4","None"],
     "theAnswer" : "1"
-    }
+    },
+
+  "4":
+      {
+      "question": "What is an interest rate?",
+      "answer": ["How interested local investors are in a set of stock.","How much it costs to upkeep a bank account.",
+      "The percentage of money compounded by the bank, as payment for storing your money in the bank.","The rate that you like best for your account."],
+      "theAnswer" : "2"
+      },
+
+    "5":
+      {
+      "question": "What is a loan?",
+      "answer": ["A loan is another term for the money you put into a bank account.",
+      "A loan is an amount of money you are given in good faith that you will repay it with interest.",
+      "The amount of money it takes to open a bank account.",
+      "Another name for an investor."],
+      "theAnswer" : "1"
+      },
+
+    "6":
+        {
+        "question": "As a general rule, what is the recommended amount you should have stored for an emergency?",
+        "answer": ["Nothing","1 to 3 months' expenses", "2 years expenses", "6 to 12 months' expenses"],
+        "theAnswer" : "3"
+        },
+
+    "7":
+        {
+        "question": "Which statement about a Certificate of Deposit (CoD) is false?",
+        "answer": ["A CD is an interest-bearing savings certificate insured by the FDIC.",
+        "It pays a fixed rate of interest for a fixed term.",
+        "It has no fixed term and usually has a variable interest rate.",
+        "Penalties result if money is withdrawn before the term ends."],
+        "theAnswer" : "2"
+        },
+
+    "8":
+        {
+        "question": "A mutual fund is: ",
+        "answer": ["A pool of assets owned by many investors and operated by a manager",
+        "A group of people who mutually agree to sponsor the same single stock",
+        "A group of people who mutually agree to sponsor the same charity",
+        "Another term for the money held by a board of directors"],
+        "theAnswer" : "0"
+        },
+
+    "9":
+        {
+        "question": "What are the 5 factors that add up to make your credit score?",
+        "answer": ["Amount owed + highest interest rate + number of cards + delinquencies + overages",
+        "Gross income + number of cards + payment history + penalties + savings",
+        "Nice smile + winning attitude + promise to be more responsible + the right credit score incantation + eye of newt",
+        "Payment history + utilization ratio + new applications + length of use + kinds of credit"],
+        "theAnswer" : "3"
+        }
+
+
 }

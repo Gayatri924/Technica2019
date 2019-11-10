@@ -6,10 +6,10 @@ var carmenMover;
 function startGame() {
   myGameArea.start();
   Carmen = new component(20, 20, "images/main_character_1.png", 10, 290);
-  Person1 = new component(20, 20, "images/random citizen one.png", 450, 10);
-  Person2 = new component(20, 20, "images/random citizen two.png", 800, 10);
-  Person3 = new component(20, 20, "images/random citizen three.png", 1400, 290);
-  Background = new component(1600, 600, "images/level_one_bg.png", 0, 0);
+  Person1 = new component(20, 20, "images/random citizen one.png", 500, 10);
+  Person2 = new component(20, 20, "images/random citizen two.png", 1050, 10);
+  Person3 = new component(20, 20, "images/random citizen three.png", 1350, 290);
+  Background = new component(1600, 600, "images/LEVEL_2_BG.png", 0, 0);
 }
 
 function component(width, height, src, x, y) {
@@ -96,7 +96,7 @@ function checkCollisions(){
     check3 = true;
     stopMoving();
     document.getElementById("go").removeEventListener("mousedown", startMoving);
-    fetchFromServer(3);
+    fetchFromServer(4);
   }
   if(Math.abs(Carmen.x - Person2.x) < 50 && Math.abs(Carmen.y - Person2.y) < 100 && !check2){
     console.log(check3);
@@ -104,7 +104,7 @@ function checkCollisions(){
     check2 = true;
     stopMoving();
     document.getElementById("go").removeEventListener("mousedown", startMoving);
-    fetchFromServer(2);
+    fetchFromServer(5);
   }
   if(Math.abs(Carmen.x - Person1.x) < 50 && Math.abs(Carmen.y - Person1.y) < 100 && !check1){
     console.log(check3);
@@ -112,7 +112,7 @@ function checkCollisions(){
     check1 = true;
     stopMoving();
     document.getElementById("go").removeEventListener("mousedown", startMoving);
-    fetchFromServer(1);
+    fetchFromServer(6);
   }
   if(Carmen.x >= 1500){
     clearInterval(interval);
@@ -165,5 +165,5 @@ function correctFunction(responseObject) {
 }
 
 function endGame(){
-    window.location.href = '/level2';
+  window.location.href = '/level3';
 }

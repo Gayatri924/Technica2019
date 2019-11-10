@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type"text/css" href = "css/game.css">
+        <link rel="stylesheet" type="text/css" href="css/infoAndHome.css">
+    </head>
+      <header>
+          <div class="top-nav">
+            <div class='top-menu left'><a href='/play'>Play</a></div>
+            <div class='top-menu right'><a href='/learn'>Learn</a></div>
+           </div>
+      </header>
+      <div id="entireThing">
+        <body onload="startGame()">
+          <div id="game">
+            <canvas id="canva"></canvas>
+          </div>
+        <br>
+            <div id="button">
+            <button id="go">Go</button>
+                <div id="question">
+                </div>
+            </div>
+        </body>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/level3.js"></script>
+</html>

@@ -16,6 +16,14 @@ exports.level1 = function(req, res){
   res.render("level1", res.locals.obj);
 }
 
+exports.level2 = function(req, res){
+  res.render("level2", res.locals.obj);
+}
+
+exports.level3 = function(req, res){
+  res.render("level3", res.locals.obj);
+}
+
 exports.background_questions = function(req, res){
   var num = req.query.num;
   questionAnswerObj = res.locals.obj[num]

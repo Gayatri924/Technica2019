@@ -43,10 +43,10 @@ button {
 }
 
 h1 {
-  background-color: white;
-  width: 600px:
+  background-color: black;
+  width: 80px:
   padding: 50px;
-  color: black;
+  color: white;
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
   font-weight: 300;
@@ -91,20 +91,20 @@ h1 {
 
 }
 .bodybtn button:hover{
-  background-color: black;
-  color:white
+  background-color: rgb(205, 166, 255);
 
 }
 
 .bodybtn button{
-  background-color: white;
-  color:black;
+  background-color: black;
+  color:white;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
   display: inline-block;
   width: 600px;
+  height: 40px;
   border: 2px solid black;
 
 }

@@ -8,8 +8,8 @@ function startGame() {
   Carmen = new component(20, 20, "images/main_character_1.png", 10, 290);
   Person1 = new component(20, 20, "images/random citizen one.png", 450, 10);
   Person2 = new component(20, 20, "images/random citizen two.png", 800, 10);
-  Person3 = new component(20, 20, "images/random citizen three.png", 1400, 290);
-  Background = new component(1600, 600, "images/level_one_bg.png", 0, 0);
+  Person3 = new component(20, 20, "images/random citizen three.png", 1200, 10);
+  Background = new component(1600, 600, "images/level_3_bg.png", 0, 0);
 }
 
 function component(width, height, src, x, y) {
@@ -82,6 +82,7 @@ function updateGameArea() {
   }
   Person1.y += change;
   Person2.y += change;
+  Person3.y += change;
   boardUpdate();
   checkCollisions();
 }
@@ -90,13 +91,13 @@ var check2 = false;
 var check1 = false;
 
 function checkCollisions(){
-  if(Math.abs(Carmen.x - Person3.x) < 50 && !check3){
+  if(Math.abs(Carmen.x - Person3.x) < 50 && Math.abs(Carmen.y - Person3.y) < 100 && !check3){
     console.log(check3);
     clearInterval(interval);
     check3 = true;
     stopMoving();
     document.getElementById("go").removeEventListener("mousedown", startMoving);
-    fetchFromServer(3);
+    fetchFromServer(7);
   }
   if(Math.abs(Carmen.x - Person2.x) < 50 && Math.abs(Carmen.y - Person2.y) < 100 && !check2){
     console.log(check3);
@@ -104,7 +105,7 @@ function checkCollisions(){
     check2 = true;
     stopMoving();
     document.getElementById("go").removeEventListener("mousedown", startMoving);
-    fetchFromServer(2);
+    fetchFromServer(8);
   }
   if(Math.abs(Carmen.x - Person1.x) < 50 && Math.abs(Carmen.y - Person1.y) < 100 && !check1){
     console.log(check3);
@@ -112,7 +113,7 @@ function checkCollisions(){
     check1 = true;
     stopMoving();
     document.getElementById("go").removeEventListener("mousedown", startMoving);
-    fetchFromServer(1);
+    fetchFromServer(9);
   }
   if(Carmen.x >= 1500){
     clearInterval(interval);
@@ -165,5 +166,16 @@ function correctFunction(responseObject) {
 }
 
 function endGame(){
-    window.location.href = '/level2';
+        var ajax_params = {
+        'url'     : "http://127.0.0.1:8080/game_over",
+        'type'    : "get",
+        'data'    : {"thing":"anotherthing"},
+        'success' : endFunction
+    }
+    console.log(ajax_params)
+    $.ajax( ajax_params )
+}
+
+function endFunction(responseObject){
+    document.getElementById("entireThing").innerHTML = responseObject;
 }
