@@ -9,7 +9,7 @@ exports.middleWare = function(req, res, next){
 }
 
 exports.startGame = function(req, res){
-    res.render( "introGame");
+    res.render( "IntroGame");
 }
 
 exports.level1 = function(req, res){
