@@ -10,4 +10,6 @@ module.exports.set = function(app, request) {
 
     app.get('/play', game.middleWare,  game.startGame);
 
+    app.get('/background_questions');
+
 }
