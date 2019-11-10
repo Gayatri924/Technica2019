@@ -1,10 +1,10 @@
 <link rel="stylesheet" type="text/css" href="css/infoAndHome.css">
 
-<questionText>{{responseObject.question}}</questionText>
+<questionText>{{responseObject.question}}</questionText><br>
 <form action='checkAnswer' method= "get" id = "the_form">
     <input type="radio" name="option" value="0" ><answerText>{{responseObject.answer.[0]}}</answerText><br>
     <input type="radio" name="option" value="1" ><answerText>{{responseObject.answer.[1]}}</answerText><br>
     <input type="radio" name="option" value="2" ><answerText>{{responseObject.answer.[2]}}</answerText><br>
-    <input type="radio" name="option" value="3" ><answerText>{{responseObject.answer.[3]}}</answerText><br>
+    <input type="radio" name="option" value="3" ><answerText>{{responseObject.answer.[3]}}</answerText><br><br>
     <button type = "button" onclick="chooseAnswer()">Submit!</button>
 </form>

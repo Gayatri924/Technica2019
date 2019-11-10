@@ -6,6 +6,9 @@ header {
 }
 body {
   background-image: linear-gradient(to right, hotpink, royalblue, darkorchid);
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 ul {
   margin: 00px auto;
@@ -39,25 +42,6 @@ button {
   text-transform: uppercase;
 }
 
-.headerbtn button{
-  background-color: black;
-  color:white;
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 500px;
-  border: 2px solid black;
-
-}
-
-.headerbtn button:hover{
-  color: white;
-  background-color: black
-
-}
-
 h1 {
   background-color: white;
   width: 600px:
@@ -71,10 +55,6 @@ h1 {
   border: 3px solid black
 }
 
-.headerbtn form {
-  margin: 30px auto;
-  text-align: center;
-}
 .bodybtn form {
   margin: 30px auto;
   text-align: center;
@@ -99,12 +79,39 @@ h1 {
 
 }
 
+#top-nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: 50px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 166, 249);
+}
+
 .left {
     float: left;
-    padding: 0 20 40 0px;
+    margin-left: 300px;
 }
 
 .right {
     float: right;
-    padding: 0 80 40 0px;
+    margin-right: 300px;
+}
+
+.top-menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.top-menu a:hover {
+    background-color: rgb(205, 166, 255);
 }

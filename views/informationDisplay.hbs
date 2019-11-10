@@ -1,24 +1,16 @@
 <html>
     <link rel="stylesheet" type="text/css" href="css/infoAndHome.css">
     <header>
-        <div class="headerbtn">
-            <form action='/' method= "get">
-                <div class = "right">
-                    <button type = "submit">Go to Homepage!</button>
-    Z            </div>
-            </form>
-            <form action='play' method= "get">
-                <div class = "left">
-                    <button type = "submit">Play!</button>
-                </div>
-             </form>
+        <div class="top-nav">
+          <div class='top-menu left'><a href='/play'>Play</a></div>
+          <div class='top-menu right'><a href='/learn'>Learn</a></div>
          </div>
     </header>
 <br><br><br><br><br><br><br><br><br>
     <body>
         <ul>
             {{#each fact}}
-                <li>{{@key}} {{this}} </li><br><br><br><br>
+                <li><h2>{{@key}}</h2> <br> <p>{{this}}</p> </li><br><br><br><br>
             {{/each}}
         </ul>
     </body>

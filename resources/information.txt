@@ -1,1 +1,3 @@
-{ "fact" : {"sampleQuestion": "sampleInfo", "sampleQuestion2": "sampleInfo2"} }
+{ "fact" : {"Credit Scores": "Information about Credit Scores",
+              "Types of Banking Accounts": "Information about Savings and Checking Accounts",
+              "Credit Bureaus": "Information on Credit Bureaus"} }
