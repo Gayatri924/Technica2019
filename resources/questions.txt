@@ -1,21 +1,24 @@
 {
 "1":
     {
-    "question": "sampleQuestion1",
-    "answer": ["sampleAnswer11" , "sampleAnswer12", "sampleAnswer13", "sampleAnswer14"],
-    "theAnswer" : "theAnswer1"
+    "question": "If I keep a balance on my credit card, does that affect my credit score?",
+    "answer": ["Yes, it raises it." , "No, it makes it worse.", "It depends on the situation.", "It does not affect your score."],
+    "theAnswer" : "2"
     },
 
 "2":
     {
-    "question": "sampleQuestion2",
-    "answer": ["sampleAnswer21","sampleAnswer22","sampleAnswer23","sampleAnswer24"],
-    "theAnswer" : "theAnswer2"
+    "question": "What is the difference between a savings and checking account?",
+    "answer": ["There is no noticeable difference between the two.",
+      "A checking account is for daily transactions, while a savings account is usually meant to stay and accrue interest.",
+      "A savings account is for daily transactions, while a checking account is usually meant to stay and accrue interest",
+      "A savings account isn't a real type of holding account."],
+    "theAnswer" : "1"
     },
 "3":
     {
-    "question": "sampleQuestion3",
-    "answer": ["sampleAnswer31","sampleAnswer32","sampleAnswer33","sampleAnswer34"],
+    "question": "How many official credit bureaus are there?",
+    "answer": ["2","3","4","None"],
     "theAnswer" : "1"
     }
 }

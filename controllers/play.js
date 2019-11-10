@@ -31,3 +31,7 @@ exports.checkAnswer = function(req, res){
     res.render('result', {'responseObject' : returnBool})
 
 }
+
+exports.game_over = function(req, res){
+    res.render('end', {'responseObject': ''})
+}

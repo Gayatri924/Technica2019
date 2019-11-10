@@ -14,4 +14,6 @@ module.exports.set = function(app, request) {
 
     app.get('/checkAnswer', game.middleWare, game.checkAnswer)
 
+    app.get('/game_over', game.game_over)
+
 }
