@@ -6,3 +6,24 @@ canvas {
 #button, #game {
   text-align: center;
 }
+
+#button{
+    width: 100%;
+    text-align: center;
+}
+
+#button button{
+    background-color: rgb(255, 166, 249);
+    padding: 5px 10px;
+    color: black;
+    border-color: black;
+    font-size: 30px;
+}
+
+#button button:hover{
+    background-color: rgb(205, 166, 255);
+}
+
+questionText, answerText {
+  font-size: 30px;
+}
