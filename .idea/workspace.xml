@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c87c9081-7981-4a19-8b1b-39f63804ef4b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/views/questions.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/result.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/js/level1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/level1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/play.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/play.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/level1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/level1.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +25,8 @@
       <file leaf-file-name="play.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/play.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="275">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -307,8 +300,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/play.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="275">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>

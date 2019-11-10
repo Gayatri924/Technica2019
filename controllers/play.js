@@ -22,9 +22,6 @@ exports.background_questions = function(req, res){
 exports.checkAnswer = function(req, res){
     var ans = req.query.ans;
     var numQ = req.query.QuestionNum;
-    console.log(ans)
-    console.log(res.locals.obj)
-    console.log(numQ)
     answer = "option="+res.locals.obj[numQ].theAnswer
     console.log(answer)
     var returnBool = false
