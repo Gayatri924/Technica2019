@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c87c9081-7981-4a19-8b1b-39f63804ef4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/views/informationDisplay.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/informationDisplay.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/js/level1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/level1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/js/level2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/level2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/js/level3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/level3.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,15 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="level1.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/level1.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IntroGame.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/IntroGame.hbs">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,17 +36,17 @@
       <file leaf-file-name="learn.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/learn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="41" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="41" />
+            <state relative-caret-position="85">
+              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="informationDisplay.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="informationDisplay.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/informationDisplay.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -61,8 +54,8 @@
       <file leaf-file-name="play.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/play.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="442">
+              <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -85,20 +78,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level1.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="level1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/level1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2856">
-              <caret line="168" column="1" selection-start-line="168" selection-start-column="1" selection-end-line="168" selection-end-column="1" />
+            <state relative-caret-position="316">
+              <caret line="146" column="35" lean-forward="true" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="infoAndHome.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/css/infoAndHome.css">
+      <file leaf-file-name="level2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/level2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="37">
+              <caret line="128" column="42" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="level3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/level3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="144" column="42" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -124,11 +126,13 @@
         <option value="$PROJECT_DIR$/resources/questions.txt" />
         <option value="$PROJECT_DIR$/controllers/index.js" />
         <option value="$PROJECT_DIR$/views/level1.hbs" />
-        <option value="$PROJECT_DIR$/client/js/level1.js" />
         <option value="$PROJECT_DIR$/client/css/infoAndHome.css" />
         <option value="$PROJECT_DIR$/views/end.hbs" />
         <option value="$PROJECT_DIR$/controllers/play.js" />
         <option value="$PROJECT_DIR$/views/informationDisplay.hbs" />
+        <option value="$PROJECT_DIR$/client/js/level1.js" />
+        <option value="$PROJECT_DIR$/client/js/level2.js" />
+        <option value="$PROJECT_DIR$/client/js/level3.js" />
       </list>
     </option>
   </component>
@@ -413,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/play.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/end.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -434,10 +431,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/level1.js">
+    <entry file="file://$PROJECT_DIR$/controllers/learn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="168" column="1" selection-start-line="168" selection-start-column="1" selection-end-line="168" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/informationDisplay.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -448,17 +452,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/learn.js">
+    <entry file="file://$PROJECT_DIR$/controllers/play.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="41" />
+        <state relative-caret-position="442">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/informationDisplay.hbs">
+    <entry file="file://$PROJECT_DIR$/client/js/level3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        <state relative-caret-position="54">
+          <caret line="144" column="42" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/level2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="128" column="42" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/level1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="146" column="35" lean-forward="true" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
         </state>
       </provider>
     </entry>

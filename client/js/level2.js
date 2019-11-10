@@ -126,7 +126,7 @@ var numQ = 0;
 function fetchFromServer(number) {
     numQ = number
     var ajax_params = {
-        'url'     : "http://127.0.0.1:8080/background_questions",
+        'url'     : "http://3.226.240.138/background_questions",
         'type'    : "get",
         'data'    : {'num': number},
         'success' : onServerResponse
@@ -141,7 +141,7 @@ function onServerResponse(responseText) {
 function chooseAnswer(){
     var chosenAnswer = $("#the_form").serialize();
     var ajax_params = {
-        'url'     : "http://127.0.0.1:8080/checkAnswer",
+        'url'     : "http://3.226.240.138/checkAnswer",
         'type'    : "get",
         'data'    : {'ans' : chosenAnswer, 'QuestionNum' : numQ},
         'success' : correctFunction
