@@ -1,11 +1,12 @@
 header {
   background-color: black;
-  border-bottom: 1px solid #466995;
   position: fixed;
   width: 100%;
   z-index: 100;
 }
-
+body {
+  background-image: linear-gradient(to right, hotpink, royalblue, darkorchid);
+}
 ul {
   margin: 00px auto;
   padding: 0 20px;
@@ -47,18 +48,22 @@ button {
 }
 
 .headerbtn button:hover{
-  color: grey;
+  color: white;
+  background-color: black
 
 }
 
-
 h1 {
-  color: #74ECE0;
+  background-color: white;
+  width: 600px:
+  padding: 50px;
+  color: black;
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
+  border: 3px solid black
 }
 
 .headerbtn form {
@@ -68,10 +73,11 @@ h1 {
 .bodybtn form {
   margin: 30px auto;
   text-align: center;
-}
 
+}
 .bodybtn button:hover{
-  background-color: pink;
+  background-color: black;
+  color:white
 
 }
 
@@ -83,7 +89,7 @@ h1 {
   font-weight: 300;
   text-transform: uppercase;
   display: inline-block;
-  width: 500px;
+  width: 600px;
   border: 2px solid black;
 
 }
