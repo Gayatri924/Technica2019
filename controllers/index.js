@@ -8,7 +8,9 @@ module.exports.set = function(app, request) {
 
     app.get('/learn', learn.middleWare, learn.displayLearningMaterial);
 
-    app.get('/play', game.middleWare,  game.startGame);
+    app.get('/play', game.startGame);
+
+    app.get('/level1', game.middleWare, game.level1);
 
     app.get('/background_questions', game.middleWare, game.background_questions);
 

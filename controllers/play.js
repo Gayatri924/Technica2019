@@ -9,9 +9,12 @@ exports.middleWare = function(req, res, next){
 }
 
 exports.startGame = function(req, res){
-    res.render( "level1" , res.locals.obj)
+    res.render( "introGame");
 }
 
+exports.level1 = function(req, res){
+  res.render("level1", res.locals.obj);
+}
 
 exports.background_questions = function(req, res){
   var num = req.query.num;
